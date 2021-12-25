@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*           Nav           */
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+nav h1 {
+  margin: 12px;
+  font-size: 2rem;
+}
+
+#nav-links-cont a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+#nav-links-cont a {
+  cursor: pointer;
+}
+
+#nav-links-cont a:hover {
+  background: blue;
+}
+
+#nav-links-cont {
+  display: flex;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+.social {
+  height: 30px;
+  border: 2px solid;
+}
+
+
+/*              Main       */
+header {
+  background-image: url(/pics/Side_Piece_2___Anthony_Mair.0.jpg);
+  height: 100vh;
+  padding: 10px 50px;
+}
+
+#home {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#home img {
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+}
+
+#home h1 {
+  margin: 50px auto;
+}
+
+#home span {
+  color: crimson;
+}
+
+#home img:hover {
+  cursor: pointer;
+}
+
+/*          Menu         */
+#menu_cont {
+  position: relative;
+  font-family: 'Bakbak One', cursive;
+  display: none;
+  color: white;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pizza-screen, #salad-screen, #sub-screen {
+  display: none;
+  margin: 50px auto;
+}
+
+.flex-even {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.food-items-cont {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.food-item {
+  text-align: center;
+  padding: 15px;
+}
+
+.food-item h2 {
+  color: crimson;
+}
+
+#initial-display-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.initial-display-option {
+  padding: 10px 40px;
+}
+
+#initial-screen {
+  text-align: center;
+}
+
+.menu-title {
+  text-align: center;
+}
+
+#menu {
+  margin: 0px 0px 50px 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#online-ordering {
+  display: none;
+  justify-content: center;
+}
+
+#online-ordering img {
+  width: 150px;
+  height: 75px;
+}
+
+.menu-ui-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-ui-heading div {
+  display: flex;
+}
+
+.menu-ui-heading div h3 {
+  padding: 5px 15px;
+  margin: 20px
+}
+
+/*             About           */
+#about {
+  display: none;
+  color: white;
+  padding: 50px;
+}
+
+#about-text {
+  padding: 20px;
+}
+
+#about-text h1 {
+  text-align: center;
+}
+
+#about-text p {
+  line-height: 30px;
+}
+
+/*          Contact         */
+#contact {
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+input, textarea {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 250px;
+}
+
+form button {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0px 25px;
+  border-radius: 20px;
+  border: none;
+}
+
+
+/*          foooter         */ 
+#footer {
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  padding-top: 25px;
+}
+
+#footer-nav {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-nav div {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-nav-links a{
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+#footer-nav-links:hover {
+  cursor: pointer;
+}
+
+#footer-logo {
+  width: 200px;
+  margin: 0 auto 20px auto;
+}
+
+#footer-hours div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-hours div p {
+  margin: 5px;
+}
+
+#footer-hours h1 {
+  margin: 0;
+}
+
+#footer-hours {
+  width: 200px;
+  text-align: center;
+}
+
+#footer-address h1 {
+  margin: 0;
+}
+
+#footer-address p {
+  margin: 0;
+}
+
+#tag {
+  text-align: center;
+  padding: 10px;
+  display: block;
+}
+
+/*        Mobile         */
+
+@media only screen and (max-width: 750px) {
+  nav {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #logo-cont {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #nav-links-cont {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  #logo {
+    font-family: 'Bakbak One', cursive;
+    background: black;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Bakbak One', cursive;
+    background: black;
+    border: 2px solid white;
+    margin: 0px;
+    padding: 0px 10px;
+  }
+  
+  #home {
+    font-family: 'Bakbak One', cursive;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 0px;
+    margin: 50px 0px;
+    background: black;
+  }
+  
+  #order {
+    font-family: 'Bakbak One', cursive;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 0px 25px;
+  }
+  
+  header {
+    background-size: 200px 200px;
+  }
+  
+  #menu {
+    margin: 20px 0px;
+  }
+  
+  #initial-screen {
+    padding: 20px 0;
+  }
+  
+  .menu-ui-header {
+    margin: 0px;
+  }
+  
+  .initial-display-option {
+    margin: 0;
+  }
+  
+  #pizza-screen {
+    padding: 20px 0;
+  }
+  
+  .food-items-cont {
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .food-item {
+    background: black;
+    margin: 10 auto;
+    color: white;
+    padding: 0 10px;
+    border: 2px solid white;
+    text-align: center;
+  }
+  
+  #salad-screen, #sub-screen {
+    padding: 20px 0;
+  }
+  
+  #about {
+    color: white;
+    position: relative;
+    font-family: 'Bakbak One', cursive;
+    display: none;
+    margin: 50px 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .about-blurb {
+    margin: 50px auto;
+    font-size: 1rem;
+    padding: 20px;
+  }
+  
+  #contact {
+    font-size: 10px;
+    padding: 20px;
+  }
+
+}
